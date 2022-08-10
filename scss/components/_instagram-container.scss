@@ -1,0 +1,31 @@
+.instagram-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  width: 90%;
+
+  .instagram-container__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .instagram-container__icon {
+      font-size: 20px;
+    }
+    .instagram-container__txt {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .instagram-container__link {
+      color: var(--hover);
+      font-size: 10px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+  }
+
+  .instagram-container__button {
+    margin-left: 10px;
+  }
+}

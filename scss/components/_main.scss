@@ -1,0 +1,46 @@
+main {
+  .block-container {
+    .block-container__img-box {
+      overflow: hidden;
+      .block-container__img {
+        transition: 0.3s ease;
+        transition-duration: 2s;
+        &:hover {
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+        }
+      }
+    }
+    .block-container__info {
+      width: 90%;
+      margin: 30px auto 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .info__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2.2px;
+        text-align: center;
+      }
+
+      .info__txt {
+        text-indent: 1.5rem;
+      }
+      .view-more {
+        width: 90%;
+        margin: 10px 0 30px;
+        text-align: right;
+        a i {
+          font-size: 16px;
+          transition: 0.3s;
+          &:hover {
+            color: var(--hover);
+          }
+        }
+      }
+    }
+  }
+}

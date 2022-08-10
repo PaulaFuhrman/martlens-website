@@ -1,0 +1,258 @@
+@media (min-width: 576px) {
+  .app {
+    .instagram-container {
+      .instagram-container__content {
+        .instagram-container__icon {
+          font-size: 30px;
+        }
+        .instagram-container__txt {
+          font-size: 25px;
+        }
+        .instagram-container__link {
+          font-size: 12px;
+        }
+      }
+      .instagram-container__button {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .app {
+    header {
+      .header-nav {
+        .header-nav__button {
+          display: none;
+        }
+        .page-menu {
+          display: flex;
+        }
+      }
+    }
+
+    .post {
+      width: 70%;
+      > p {
+        font-size: 20px;
+      }
+    }
+
+    .page-block {
+      .page-block__content-info {
+        padding: 35px 0;
+        .content-title {
+          font-size: 30px;
+        }
+        .content-button {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .instagram-container {
+      padding: 40px;
+    }
+
+    footer {
+      .footer-container {
+        width: 70%;
+        padding: 30px;
+        .footer-container__link {
+          font-size: 40px;
+        }
+        .footer-container__menu {
+          > li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .app {
+    header {
+      .header-nav {
+        .header-nav__link {
+          font-size: 50px;
+          padding-left: 20px;
+        }
+        .page-menu {
+          .page-menu__list {
+            > li,
+            .dropdown #portfolio-page-btn,
+            .dropdown .dropdown-menu li a {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .post {
+      width: 60%;
+    }
+
+    main {
+      .block-container {
+        display: flex;
+        margin: 20px;
+        background-color: var(--bg);
+        .block-container__img-box {
+          width: 90%;
+        }
+        .block-container__info {
+          width: 60%;
+          padding: 18px 30px;
+          text-align: center;
+          justify-content: space-between;
+          .view-more {
+            margin: 10px 0 0px;
+          }
+        }
+      }
+      .b-c-001 {
+        .block-container__img-box {
+          order: 2;
+        }
+      }
+      .b-c-003 {
+        .block-container__img-box {
+          order: 2;
+        }
+      }
+    }
+
+    .page-block {
+      display: flex;
+      margin: 20px;
+      .page-block__content-img {
+        order: 1;
+        width: 80%;
+        
+      }
+      .page-block__content-info {
+        order: 2;
+        .content-box {
+          background-color: white;
+          width: 80%;
+          height: 100%;
+          padding: 0 20px;
+          margin-right: 20px;
+          justify-content: center;
+          .content-button { 
+            background-color: var(--bg);
+          }
+        }
+      }
+    }
+
+    footer {
+      .footer-container {
+        .footer-container__menu {
+          flex-direction: column;
+          > li {
+            margin-bottom: 5px;
+          }
+          li:not(:last-of-type):after {
+            content: "";
+        }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .app {
+    main {
+      .block-container {
+        .block-container__info {
+          .info__title {
+            font-size: 40px;
+          }
+        .info__txt {
+          font-size: 18px;
+        }
+        .view-more {
+          a i {
+            font-size: 20px;
+          }
+        }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .app {
+    header {
+      .header-nav {
+        .page-menu {
+          .page-menu__list {
+            margin-right: 20px;
+            > li,
+            .dropdown #portfolio-page-btn,
+            .dropdown .dropdown-menu li a {
+              font-size: 20px;
+            }
+            .li, 
+            .dropdown #portfolio-page-btn {
+              margin: 0 25px;
+            }
+          }
+        }
+      }
+    }
+
+    .post {
+      width: 50%;
+      margin: 50px auto;
+      >p {
+        font-size: 25px;
+      }
+    }
+
+    main {
+      .block-container {
+        .block-container__img-box {
+          width: 90%;
+        }
+        .block-container__info {
+          height: 80%;
+          margin: auto 0;
+          .info__txt {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .page-block {
+      .page-block__content-info {
+        .content-box {
+          .content-title {
+            font-size: 40px;
+          }
+          .content-button {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .instagram-container {
+      .instagram-container__content {
+        .instagram-container__link {
+          font-size: 15px;
+        }
+      }
+    }
+
+    
+  }
+}

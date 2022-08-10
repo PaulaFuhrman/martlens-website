@@ -1,0 +1,18 @@
+.post {
+    width: 90%;
+    margin: 30px auto;
+    > p {
+        margin-bottom: 8px;
+      }
+
+      p:nth-child(1),
+      p:nth-child(2) {
+        text-indent: 1.5em;
+      }
+
+      #post-author {
+        margin-top: 20px;
+      text-align: right;
+      font-family: "WindSong", cursive;
+      }
+}

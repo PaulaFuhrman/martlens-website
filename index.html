@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MartLens Photography</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="home">
+        <img src="./assets/img-background.jpg" alt="" class="home-img" />
+      </div>
+
+      <header>
+        <div class="header-nav">
+          <a
+            href="http://127.0.0.1:5500/index.html"
+            class="header-nav__link"
+            title="MartLens Photographer"
+            >MartLens</a
+          >
+          <button class="header-nav__button btn">
+            <i class="fa-solid fa-bars" id="open-menu"></i>
+            <i class="fa-solid fa-xmark" id="close-menu"></i>
+          </button>
+
+          <div class="page-menu">
+            <ul class="page-menu__list">
+              <li>O mnie</li>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  id="portfolio-page-btn"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Portrety</a></li>
+                  <li><a class="dropdown-item" href="#">Sesje ślubne</a></li>
+                  <li><a class="dropdown-item" href="#">Sesje grupowe</a></li>
+                </ul>
+              </div>
+              <li>Oferta</li>
+              <li>Strefa klienta <i class="fa-solid fa-lock"></i></li>
+              <li>Kontakt</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mobile-menu">
+          <ul class="mobile-menu__list">
+            <li>O mnie</li>
+            <div class="collapse-list">
+              <button
+                class="accordion-button collapsed"
+                id="portfolio-mobile-btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse"
+                aria-expanded="false"
+                aria-controls="flush-collapse"
+              >
+                Portfolio<i class="fas fa-caret-down"></i>
+              </button>
+              <div
+                id="flush-collapse"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <a href="#" class="list-group-item list-group-item-action"
+                  ><li>Portrety</li></a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  ><li>Sesje ślubne</li></a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  ><li>Sesje grupowe</li></a
+                >
+              </div>
+            </div>
+            <li>Oferta</li>
+            <li>Strefa klienta <i class="fa-solid fa-lock"></i></li>
+            <li>Kontakt</li>
+          </ul>
+        </div>
+      </header>
+
+      <article class="post">
+        <p>
+          Moją przygodę z profesjonalnym robieniem zdjęć rozpoczełam na początku
+          2022 roku. Działam głównie na terenie województwa małopolskiego i
+          podkarpackiego.
+        </p>
+        <p>
+          Mam nadzieję, że wkrótce się połączymy i stworzymy coś wyjątkowego.
+        </p>
+        <p id="post-author">Martyna</p>
+      </article>
+
+      <main>
+        <div class="block-container b-c-001">
+          <div class="block-container__img-box">
+            <img
+              src="./assets/img-portret.jpg"
+              alt=""
+              class="block-container__img img-fluid"
+            />
+          </div>
+          <div class="block-container__info">
+            <h3 class="info__title">
+              Portret <br /><i class="fa-solid fa-ellipsis"></i>
+            </h3>
+
+            <span class="info__txt"
+              >Sesje portretowe są dla mnie bardzo wyjątkowe. W momencie, gdy
+              fotografuję osobę niedoświadczoną w pracy przed obiektywem — czuję
+              ekscytacje, a w wyniku tej współpracy powstają zdjęcia wizualnie
+              interesujące. Sesje portretowe to odkrywanie siebie, swoich
+              potrzeb i uśpionych emocji.
+            </span>
+            <p class="view-more">
+              <a href="#" title="Zobacz więcej"
+                ><i class="fa-solid fa-angles-right"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="block-container b-c-002">
+          <div class="block-container__img-box">
+            <img
+              src="./assets/img-wedding.jpg"
+              alt=""
+              class="block-container__img img-fluid"
+            />
+          </div>
+          <div class="block-container__info">
+            <h3 class="info__title">
+              Reportaż ślubny<br /><i class="fa-solid fa-ellipsis"></i>
+            </h3>
+            <span class="info__txt"
+              >Uwielbiam dokumentować historie miłosne i przedstawiać je w
+              najpiękniejszy możliwy sposób przez mój obiektyw. Uwieczniona w
+              ten sposób chwila stanie się bodźcem wspomnień. Dokądkolwiek
+              zaprowadzi Cię Twoja historia miłosna, chętnie udokumentuję Twoją
+              uroczystość.
+            </span>
+            <p class="view-more">
+              <a href="#" title="Zobacz więcej"
+                ><i class="fa-solid fa-angles-right"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="block-container b-c-003">
+          <div class="block-container__img-box">
+            <img
+              src="./assets/img-group.jpg"
+              alt=""
+              class="block-container__img img-fluid"
+            />
+          </div>
+          <div class="block-container__info">
+            <h3 class="info__title">
+              Sesje grupowe<br /><i class="fa-solid fa-ellipsis"></i>
+            </h3>
+            <span class="info__txt"
+              >Podczas sesji grupowych najważniejsze jest dla mnie uchwycenie
+              wszystkich uczestników w spójny dla nich sposób. W swoich
+              zdjęciach staram się uchwycić nie tylko wszystkie najważniejsze
+              momenty, ale również towarzyszące im emocje.
+            </span>
+            <p class="view-more">
+              <a href="#" title="Zobacz więcej"
+                ><i class="fa-solid fa-angles-right"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <div class="page-block">
+        <div class="page-block__content-img">
+          <img src="./assets/a2.jpg" alt="" class="content-img img-fluid" />
+        </div>
+        <div class="page-block__content-info">
+          <div class="content-box">
+            <h3 class="content-title">Zapytaj o wolny termin</h3>
+            <button class="content-button">Napisz do mnie!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="instagram-container">
+        <div class="instagram-container__content">
+          <i class="fa-brands fa-instagram instagram-container__icon"></i>
+          <p class="instagram-container__txt">
+            Zapraszam <br />
+            na mój <br />
+            instagram
+          </p>
+          <a
+            class="instagram-container__link"
+            href="https://www.instagram.com/foto.martlens/"
+            title="instagram"
+            >martlens</a
+          >
+        </div>
+
+        <div class="instagram-container__button">
+          <a href="#" class="img-fluid" title="foto.martlens"
+            ><img src="./assets/img-instagram.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <a
+            href="http://127.0.0.1:5500/index.html"
+            class="footer-container__link"
+            title="MartLens Photographer"
+            >MartLens</a
+          >
+
+          <ul class="footer-container__menu">
+            <li>O mnie</li>
+            <li>Portfolio</li>
+            <li>Oferty</li>
+            <li>Strefa klienta</li>
+            <li>Kontakt</li>
+          </ul>
+
+          <div class="footer-container__social-links">
+            <a href="#" title="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" title="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="mailto:mailto@gmail.com" title="Mail"
+              ><i class="fa-solid fa-at"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+
+      <a
+        class="back-to-top"
+        title="Przewiń do góry"
+        href="#"
+        data-scroll-speed="400"
+        data-start-scroll="300"
+        ><i class="fa-solid fa-angle-up"></i
+      ></a>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d3b3f8e4d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
